@@ -468,7 +468,7 @@ print_install "Menginstall Dropbear"
 apt-get install dropbear -y 
 wget -q -O /etc/default/dropbear "${REPO}Cfg/dropbear.conf"
 chmod +x /etc/default/dropbear
-echo "SERVERPREMIUM_HappySurfingTheInternetWaves" > /etc/handeling
+echo "SERVERPREMIUM" > /etc/handeling
 echo "Yellow" >> /etc/handeling
 print_success "Dropbear"
 }
