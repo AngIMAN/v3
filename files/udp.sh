@@ -895,14 +895,18 @@ if ! grep -q "$username" /etc/hosts; then
     echo "$LOCAL_IP    $username" >> /etc/hosts
 fi
 clear
-echo -e ""
-echo -e ""
 echo -e "\033[96m==========================\033[0m"
 echo -e "\033[92m      INSTALL SUCCES      \033[0m"
 echo -e "\033[96m==========================\033[0m"
 echo -e ""
+sleep 2
+clear
+echo -e "\033[93;1m Wait inn 4 sec...\033[0m"
+sleep 4
 clear
 echo ""
 echo ""
 echo ""
+read -p "Press [ Enter ]  TO REBOOT"
+clear
 reboot
