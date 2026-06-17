@@ -441,7 +441,7 @@ systemctl enable udp-mini-3
 systemctl start udp-mini-3
 print_success "files Quota Service"
 }
-function ssh_slow(){
+#function ssh_slow(){
 clear
 print_install "Memasang modul SlowDNS Server"
 wget -q -O /tmp/nameserver "${REPO}Fls/nameserver" >/dev/null 2>&1
@@ -662,21 +662,9 @@ echo enable service udp-custom
 systemctl enable udp-custom &>/dev/null
 print_success "UDP-CUSTOM"
 clear
-print_install "MEMASANG NOOBZVPNS"
-cd
-apt install git -y
-git clone https://github.com/Ilham24022001/noobzvpn.git
-cd noobzvpn/
-chmod +x install.sh
-./install.sh
 
-echo start service noobzvpns
-systemctl start noobzvpns &>/dev/null
 
-echo enable service noobzvpns
-systemctl enable noobzvpns &>/dev/null
-print_success "NOOBZVPNS"
-}
+
 function ins_restart(){
 clear
 print_install "Restarting  All Packet"
