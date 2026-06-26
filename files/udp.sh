@@ -631,7 +631,7 @@ Description=UDP Custom by ePro Dev. Team
 User=root
 Type=simple
 ExecStart=/root/udp/udp-custom server
-syntax error near unexpected token '}'
+
 Restart=always
 RestartSec=2s
 
