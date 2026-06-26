@@ -631,7 +631,7 @@ Description=UDP Custom by ePro Dev. Team
 User=root
 Type=simple
 ExecStart=/root/udp/udp-custom server
-
+WorkingDirectory=/root/udp/
 Restart=always
 RestartSec=2s
 
@@ -829,7 +829,6 @@ make_folder_xray
 pasang_domain
 nginx_install
 base_package
-password_default
 pasang_ssl
 install_xray
 ssh
