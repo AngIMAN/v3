@@ -604,7 +604,6 @@ print_success "ePro WebSocket Proxy"
 
 clear
 print_install "Menginstall UDP-CUSTOM"
-}
 cd
 rm -rf /root/udp
 mkdir -p /root/udp
@@ -663,7 +662,7 @@ echo enable service udp-custom
 systemctl enable udp-custom &>/dev/null
 print_success "UDP-CUSTOM"
 clear
-
+}
 
 
 function ins_restart(){
