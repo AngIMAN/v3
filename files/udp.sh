@@ -603,6 +603,7 @@ apt autoremove -y >/dev/null 2>&1
 print_success "ePro WebSocket Proxy"
 
 clear
+
 print_install "Menginstall UDP-CUSTOM"
 cd
 rm -rf /root/udp
@@ -661,8 +662,8 @@ systemctl start udp-custom &>/dev/null
 echo enable service udp-custom
 systemctl enable udp-custom &>/dev/null
 print_success "UDP-CUSTOM"
-clear
 }
+clear
 
 
 function ins_restart(){
