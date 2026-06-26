@@ -441,7 +441,7 @@ systemctl enable udp-mini-3
 systemctl start udp-mini-3
 print_success "files Quota Service"
 }
-#function ssh_slow(){
+function ssh_slow(){
 clear
 print_install "Memasang modul SlowDNS Server"
 wget -q -O /tmp/nameserver "${REPO}Fls/nameserver" >/dev/null 2>&1
@@ -604,6 +604,7 @@ print_success "ePro WebSocket Proxy"
 
 clear
 print_install "Menginstall UDP-CUSTOM"
+}
 cd
 rm -rf /root/udp
 mkdir -p /root/udp
@@ -630,7 +631,7 @@ Description=UDP Custom by ePro Dev. Team
 User=root
 Type=simple
 ExecStart=/root/udp/udp-custom server
-WorkingDirectory=/root/udp/
+syntax error near unexpected token '}'
 Restart=always
 RestartSec=2s
 
